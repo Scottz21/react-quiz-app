@@ -1,0 +1,143 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Fraktur', 'Cinzel Decorative', 'Blackletter', serif;
+  background: radial-gradient(ellipse at top, #0c0c0c 0%, #1a1a1a 100%);
+  color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Gothic Card Container */
+.container {
+  background: #111111;
+  border: 2px solid #990000;
+  border-radius: 6px;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(153, 0, 0, 0.5);
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #cc0000;
+  font-family: 'UnifrakturCook', 'Cinzel Decorative', cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #cc0000;
+  padding-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  color: #aaaaaa;
+  line-height: 1.6;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  font-family: 'Cinzel', serif;
+}
+
+/* Inputs & Selects */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.4rem;
+  background-color: #1f1f1f;
+  border: 1px solid #990000;
+  border-radius: 4px;
+  color: #f2f2f2;
+  font-size: 1rem;
+  font-family: 'Courier New', monospace;
+  transition: all 0.3s ease;
+  appearance: none;
+}
+
+select option {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+/* Focus Effects */
+input:focus,
+select:focus {
+  border-color: #ff0000;
+  outline: none;
+  box-shadow: 0 0 8px #cc0000aa;
+}
+
+/* Radio Group */
+.radio-group {
+  margin-top: 1rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #ccc;
+  font-family: 'Cinzel', serif;
+}
+
+.radio-group input[type="radio"] {
+  transform: scale(1.3);
+  accent-color: #990000;
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.85rem;
+  background: linear-gradient(to right, #660000, #330000);
+  color: #fff;
+  border: 2px solid #990000;
+  border-radius: 6px;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #990000;
+  border-color: #cc0000;
+  box-shadow: 0 0 10px #ff0000aa;
+}
+
+/* Error Messages */
+.error {
+  margin-top: 1rem;
+  background-color: rgba(153, 0, 0, 0.3);
+  border-left: 4px solid #ff0000;
+  padding: 0.75rem;
+  border-radius: 4px;
+  color: #ffaaaa;
+  font-family: 'Courier New', monospace;
+  font-weight: 500;
+}
